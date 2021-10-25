@@ -1,4 +1,4 @@
-app.component('product-display', {
+app.component('product-details', {
   props: {
     details: {
       type: String,
@@ -13,6 +13,6 @@ app.component('product-display', {
      
         return this.details
   }
-
+  }
 
 })
