@@ -42,7 +42,7 @@ app.component('product-display', {
 
         <button 
           class="button" 
-          v-on:click="addToCart">
+          v-on:click="removeFromCart">
           Remove from Cart
         </button>
 
@@ -67,6 +67,7 @@ app.component('product-display', {
       },
       removeFromCart() {
         this.$emit('remove-from-cart')
+        console.log('REMOVE')
     },
       updateVariant(index) {
           this.selectedVariant = index
